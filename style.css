@@ -196,3 +196,11 @@ img{
 .contact-table td{
     padding: 10px;
 }
+/*GAME********************************************************************************************/
+.iframe-wrapper{
+    display: block;
+    text-align: center;
+    align-items: center;
+    padding-left: 14%;
+    padding-right: 14%;
+}

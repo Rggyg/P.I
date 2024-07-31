@@ -78,6 +78,18 @@
                     </td>
                 </tr>
             </table>
+        </div><br>
+        <div class="iframe-wrapper">
+            <iframe id="game-player" seamless="seamless" scrolling="no" src="https://www.minijuegos.com/embed/tic-tac-toe" data-src="https://www.minijuegos.com/embed/tic-tac-toe" width="800" height="600" allow="autoplay; fullscreen; camera; clipboard-read; clipboard-write;" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+            
+<!--/ .game-aside -->
+
+<script>
+// adding tabs to game aside
+    MP.registerEventListener("ready",function() {
+        MP.navigation.helpers.tabs('.js-tabs-game-aside', {'urlTarget':false});
+    });
+</script>
         </div>
     </section>
     <script src="script.js"></script>
