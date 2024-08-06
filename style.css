@@ -7,6 +7,7 @@
     --text-color:#e7ebeb;
     --sidebar-text-color:#f8ffb8;
     --button-select-color:#1A466B;
+    --background-darkness-color:#0b1329;
     /*TRANSITIONS***************************************************/
     --anim-02:all 0,4s ease;
     --anim-03:all 0.5s ease;
@@ -132,11 +133,11 @@ body::-webkit-scrollbar{
     width: 10px;
 }
 body::-webkit-scrollbar-thumb{
-    background: var(--sidebar-color);
+    background-color: var(--sidebar-color);
     border-radius: 5px;
 }
 body::-webkit-scrollbar-track{
-    background-color: #0b1329;
+    background-color: var(--background-darkness-color);
 }
 .infoPanel.mini{
     padding-left: 85px;
@@ -201,20 +202,30 @@ img{
     align-items: center;
     justify-items: center;
 }
+.table-game{
+    background-color: var(--background-darkness-color);
+    border-collapse: collapse;
+    width: 100%;
+    border-radius: 20px;
+    align-items: center;
+    justify-items: center;
+}
 .table-large{
     width: 20%;
 }
 .fix-table-ps{
     padding-right: 10px;
 }
-.table th{
+.table th,
+.table-game th{
     background-color: var(--sidebar-color);
     border-collapse: collapse;
     padding: 15px 0;
     text-align: center;
     color: var(--sidebar-text-color);
 }
-.table td{
+.table td,
+.table-game td{
     text-align: center;
     padding: 10px 0;
 }
